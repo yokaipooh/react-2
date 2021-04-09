@@ -1,0 +1,19 @@
+.container{
+    border: 2px solid #fff;
+    display: flex;
+    flex: 1;
+    min-width: 200px;
+    max-width: 400px;
+    align-content:space-around;
+    flex-direction: inherit;
+    flex-wrap: nowrap;
+}
+
+.card{
+    width: 18rem;
+    max-lines: [none | 10];
+}
+
+.button{
+    justify-content: flex-end;
+}
