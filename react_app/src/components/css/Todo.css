@@ -1,0 +1,22 @@
+.container{
+    margin-top: 30px;
+    display: flex;
+    flex-wrap: wrap;
+    font-size: 20px;
+    text-align: center;
+    flex: 1;
+    align-content:space-around;
+    flex-direction: inherit;
+}
+
+.card{
+    border: 2px solid black;
+    width: 18rem;
+}
+
+.button{
+    flex-wrap: wrap;
+    font-size: 15px;
+    text-align: center;
+    justify-content: flex-end;
+}
