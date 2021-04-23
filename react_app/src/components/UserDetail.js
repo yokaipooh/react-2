@@ -1,12 +1,17 @@
 import {React, useEffect, useState} from 'react'
-import {Image} from 'antd'
 import './css/UserDetail.css'
 
 export default function UserDetail(props){
+
+    //  hook function for user's data
     const [detailUser, setDetailUser] = useState([]);
+
+
     useEffect(() => {
         getDataDetail()
     },[])
+
+    // set user's detail with the data get from the user list
     const getDataDetail =  () => {
        let data = props.location.state
        setDetailUser(data)
@@ -18,10 +23,10 @@ export default function UserDetail(props){
             <div className="box-detail">
             <img src={detailUser.avatar} className="card-img-top" alt="..." />
                 <div className="user_detail">
-                        <p>Name : {detailUser.fullName}</p>
+                        <p>Name : {detailUser.name}</p>
                         <p>Age : {detailUser.age}</p>
                         <p>Gender : {detailUser.gender}</p>
-                        <p>Address : {detailUser.fullLocation} </p>
+                        <p>Address : {detailUser.location} </p>
                         <p>Email : {detailUser.email} </p>
                         <p>Phone : {detailUser.phone} </p>
                 </div>
